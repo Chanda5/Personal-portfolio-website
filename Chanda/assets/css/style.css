@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+ /*  
+:root {
+    --color-body: #f0f0f0;
+    --color-heading: #ffffff;
+    --color-base: #111111;          
+    --color-base2: #000000;         
+    --color-brand: #ff1e1e;         
+    --color-brand2: #cc0000;  
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree";
+
+   
+}
+ */   
+
+/*
+:root {
+    --color-body: #eaeaea;
+    --color-heading: #f5f5f5;
+    --color-base: #1c1c1c;          
+    --color-base2: #000000;         
+    --color-brand: #ffd700;        
+    --color-brand2: #e6c200;        
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree";
+
+  
+}
+    */
+    
+
+    /*
+    :root {
+    --color-body: #f5f7fa;
+    --color-heading: #1f2937;
+    --color-base: #374151;
+    --color-base2: #111827;
+    --color-brand: #2563eb;  
+    --color-brand2: #1d4ed8;
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+    */
+    
+
+    
+    
+
+
+    
+    
+
+     
+  
+
+
+
+
+:root {
+    --color-body: #f8f9fc;
+    --color-heading:  #ffffff;/* #2c3e50*/
+    --color-base: #34495e;
+    --color-base2: #1c1c1c ;
+    --color-brand: #e67e22;
+    --color-brand2: #d35400; 
+    --sidebar-width: 240px;
+    --font-base: "Bai Jamjuree", sans-serif;
+}
+   
+    
+
+
+
+
+
+ 
+body {
+    background-color: var(--color-base2);
+    color:var(--color-body);
+    
+}
+.hero {
+  background-color: #1c1c1c57;
+    height: 100vh; 
+  
+    
+
+}
+
+.hero-row{
+    position:absolute;
+    bottom:1px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:var(--color-heading);
+    font-weight:700;
+
+}
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover {
+    color: var(--color-brand);
+
+}
+img {
+    width: 100%;
+}
+.text-brand{
+    color: var(--color-brand);
+
+}
+.bg-base {
+    background-color: var(--color-base);
+}
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:80px;
+    padding-bottom:80px;
+    border-bottom:2px solid rgba(255,255,255,0.1);
+
+
+}
+.shadow-effect {
+    transition: all 0.5s;
+}
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color:var(--color-brand);
+    color: var(--color-heading);
+
+}
+/*NavBar*/
+.navbar{
+    background-color: var(--color-base);
+}
+.navbar .nav-link {
+    font-weight: 700px;
+    text-transform: uppercase;
+    color:#fff7f7;
+}
+ .navbar .nav-link:hover {
+   color: var(--color-brand); 
+}
+.navbar .nav-link.active{
+    color: var(--color-brand);
+}
+
+
+/* Navbar*/
+@media (min-width: 992px) {
+    .navbar{
+    min-height: 100vh;
+    width: var(--sidebar-width);
+   
+     /*--gradient-main: linear-gradient(rgba(0, 0, 0, 0.9), rgba(17, 17, 17, 0.9)), url(../images/sidebar-img.jpg);*/
+      --gradient-main: linear-gradient(rgba(0, 0, 0, 0.9), rgba(28, 28, 28, 0.9)), url(../images/sidebar-img.jpg); 
+
+    background-size: cover;
+    background-position: center;
+    }
+    }
+    .navbar-brand img {
+        border: 0px solid var(--color-brand);
+    }
+    /*content wrapper*/
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
+/*btn*/
+.btn {
+    padding:5px 10px;
+     font-weight:700;
+}
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+.link-custom {
+    font-weight:700px;
+    position: relative;
+
+}
+.link-custom::after{
+    content: "";
+    width:0%;
+    height:2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left:0;
+    top:110%;
+    transition: all 0.4s;
+
+}
+.link-custom:hover::after {
+    width:100%;
+}
+
+/**Card */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+
+
+/* SOCIAL ICONS */
+
+footer p {
+  font-size: 1rem;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+
+
+
+    
+
+
